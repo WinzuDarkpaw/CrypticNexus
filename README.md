@@ -9,6 +9,7 @@ Bevor weitere Level gebaut werden Coremechanices einfügen
 	-	Rissportale
 	-	Die aktuelle Szene speichern, wenn man in der Parallelwelt ist
 	-	weiteres, wenn mir was einfällt
+	-	Einzelnen Features in eigene Szenen speichern
 
 ##Weitere Testlevel:
 Texturen und Tilemaps erstellen
