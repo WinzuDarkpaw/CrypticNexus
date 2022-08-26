@@ -81,5 +81,5 @@ func save(save_game: Resource):
 	save_game.data[SAVE_YPOS] = position.y
 
 func load(save_game: Resource):
-	position.x = save_game.DATA[SAVE_XPOS]
-	position.y = save_game.DATA[SAVE_YPOS]
+	position.x = save_game.data[SAVE_XPOS]
+	position.y = save_game.data[SAVE_YPOS]
