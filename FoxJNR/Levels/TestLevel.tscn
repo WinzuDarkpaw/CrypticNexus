@@ -145,9 +145,7 @@ points = PoolVector2Array( 18, 8, 0, 8, 0, 0, 18, 0 )
 } ]
 0/z_index = 0
 
-[node name="Game" type="Node2D" groups=[
-"Persist",
-]]
+[node name="Game" type="Node2D"]
 position = Vector2( 56.0633, 209.57 )
 script = ExtResource( 3 )
 
