@@ -1,18 +1,22 @@
 # CrypticNexus
- A 2D Puzzle Jump and Run with Parallel Universes
+ A 2D Puzzle Jump and Run with Parallel Universes</br>
 
 # Todo
-##Testlevel:
-Bevor weitere Level gebaut werden Coremechanices einfügen
-	-	Boxen verschieben
-	-	Knöpfe drücken
-	-	Rissportale
-	-	Die aktuelle Szene speichern, wenn man in der Parallelwelt ist
-	-	weiteres, wenn mir was einfällt
-	-	Einzelnen Features in eigene Szenen speichern
+## Testlevel:</br>
+Bevor weitere Level gebaut werden Coremechanices einfügen</br>
+	-	Boxen verschieben [Fertig]</br>
+	-	Knöpfe drücken	  [Fertig]</br>
+	-	Rissportale</br>
+	-	-	Entscheidung vom Aufbau der Szene:</br>
+	-	-	-	Level hat mehrere Szenen</br>
+	-	-	-	ODER Die einzelnen Abschnitte sind nochmals in Nodes unterteilt
+	-	-	-	[Eine Szene pro Level]
+	-	Speichern und Laden vom Spiel [In Development]</br>
+	-	weiteres, wenn mir was einfällt</br>
+	-	Einzelnen Features in eigene Szenen speichern</br>
 
-##Weitere Testlevel:
-Texturen und Tilemaps erstellen
+## Weitere Testlevel:</br>
+Texturen und Tilemaps erstellen</br>
 
-##Weiteres
-Eigene Texturen, Spielermodel, Animationen, Dekoelemente
+## Weiteres</br>
+Eigene Texturen, Spielermodel, Animationen, Dekoelemente</br>
