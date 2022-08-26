@@ -18,10 +18,16 @@ _global_script_classes=[ {
 "class": "PushableBox",
 "language": "GDScript",
 "path": "res://Scripts/PushableBox.gd"
+}, {
+"base": "Node2D",
+"class": "Saving",
+"language": "GDScript",
+"path": "res://Scripts/saving.gd"
 } ]
 _global_script_class_icons={
 "Player": "",
-"PushableBox": ""
+"PushableBox": "",
+"Saving": ""
 }
 
 [application]
