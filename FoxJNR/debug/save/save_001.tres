@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Core/Save/SaveGame.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+game_version = ""
+data = {
+"xpos": 7.30251,
+"ypos": 42.0696
+}

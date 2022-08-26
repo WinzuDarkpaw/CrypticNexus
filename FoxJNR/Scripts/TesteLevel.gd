@@ -4,6 +4,11 @@ extends Node2D
 # In dem Game Skript wird die gesamte Logik, die nur das Level betrifft behandelt.
 # Zwecks, dass Knöpfe nicht immer das gleiche machen! usw.
 
+onready var game_saver : Node = null
+
+func _ready():
+	game_saver = $SaveGame
+
 func _on_Area2D_body_entered(body):
 	if body is Player:
 		get_tree().reload_current_scene()

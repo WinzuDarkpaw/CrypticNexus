@@ -18,6 +18,9 @@ const jump_force = -240
 # Aktuelle Geschwindigkeit.
 var velocity = Vector2.ZERO
 
+onready var SAVE_XPOS : String = "xpos"
+onready var SAVE_YPOS : String = "ypos"
+
 func _physics_process(delta):
 	#print(Engine.get_frames_per_second())
 	handle_controls(Input)
@@ -43,6 +46,12 @@ func handle_controls(input: Input) -> void:
 	
 	if Input.is_action_just_pressed("Jump") and is_on_floor():
 		velocity.y = jump_force
+	
+	if Input.is_action_pressed("SaveGame"):
+		get_parent().game_saver.save_game(1)
+	
+	if Input.is_action_pressed("LoadGame"):
+		get_parent().game_saver.load_game(1)
 
 # Behandelt die Physischen Kräfte des Spielercharakters.
 # Wie z.B. Gravitation.
@@ -66,3 +75,11 @@ func check_box_collision(motion: Vector2) -> void:
 	var box = get_slide_collision(0).collider as PushableBox
 	if box:
 		box.push(motion)
+
+func save(save_game: Resource):
+	save_game.data[SAVE_XPOS] = position.x
+	save_game.data[SAVE_YPOS] = position.y
+
+func load(save_game: Resource):
+	position.x = save_game.DATA[SAVE_XPOS]
+	position.y = save_game.DATA[SAVE_YPOS]
