@@ -27,3 +27,7 @@ func _on_Button_body_entered(body):
 		$TileMap2.collision_mask = 1
 		# Sichtbarkeit einschalten.
 		$TileMap2.visible = true
+
+
+func _on_Rift_body_entered(body):
+	get_tree().change_scene("res://Levels/TestLevel/Level_t1.tscn")
