@@ -33,12 +33,12 @@ func _physics_process(delta):
 func handle_controls(input: Input) -> void:
 	if Input.is_action_pressed("Left"):
 		velocity.x = -speed
-		$AnimatedSprite.flip_h = false
+		$AnimatedSprite.flip_h = true
 		$AnimatedSprite.play("Walk")
 	# On Right Press
 	elif Input.is_action_pressed("Right"):
 		velocity.x = speed
-		$AnimatedSprite.flip_h = true
+		$AnimatedSprite.flip_h = false
 		$AnimatedSprite.play("Walk")
 	else:
 		velocity.x = 0
