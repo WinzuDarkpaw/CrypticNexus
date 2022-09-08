@@ -22,3 +22,9 @@ Texturen und Tilemaps erstellen</br>
 
 ## Weiteres</br>
 Eigene Texturen, Spielermodel, Animationen, Dekoelemente</br>
+
+## Ideen</br>
+- Overworld, inklusive Levelfreischaltungssystem (ü. Datei)
+- Fallende Objekte
+- Übergänge
+- Museum für gefundene Easter Eggs und Gegenstände (ü. Datei)
