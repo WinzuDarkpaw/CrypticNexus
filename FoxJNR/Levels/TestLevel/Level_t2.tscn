@@ -3,12 +3,15 @@
 [ext_resource path="res://Objects/PushableBox.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Goal.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Objects/Player.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Tilemap/tiles_packed.png" type="Texture" id=5]
+[ext_resource path="res://TemplateFiles_todelete/Tilemap/tiles_packed.png" type="Texture" id=5]
 [ext_resource path="res://Objects/Button.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Background/background_0010.png" type="Texture" id=7]
-[ext_resource path="res://Tilemap/tiles.png" type="Texture" id=8]
+[ext_resource path="res://TemplateFiles_todelete/Background/background_0010.png" type="Texture" id=7]
+[ext_resource path="res://TemplateFiles_todelete/Tilemap/tiles.png" type="Texture" id=8]
 [ext_resource path="res://Scripts/Core/Save/SaveGame.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Tiles/tile_0027.png" type="Texture" id=10]
+[ext_resource path="res://TemplateFiles_todelete/Tiles/tile_0027.png" type="Texture" id=10]
+
+
+
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Node2D

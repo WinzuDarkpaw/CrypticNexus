@@ -1,9 +1,9 @@
 [gd_scene load_steps=21 format=2]
 
-[ext_resource path="res://Background/background_0010.png" type="Texture" id=1]
-[ext_resource path="res://Tiles/tile_0027.png" type="Texture" id=2]
-[ext_resource path="res://Tilemap/tiles_packed.png" type="Texture" id=3]
-[ext_resource path="res://Tilemap/tiles.png" type="Texture" id=4]
+[ext_resource path="res://TemplateFiles_todelete/Background/background_0010.png" type="Texture" id=1]
+[ext_resource path="res://TemplateFiles_todelete/Tiles/tile_0027.png" type="Texture" id=2]
+[ext_resource path="res://TemplateFiles_todelete/Tilemap/tiles_packed.png" type="Texture" id=3]
+[ext_resource path="res://TemplateFiles_todelete/Tilemap/tiles.png" type="Texture" id=4]
 [ext_resource path="res://Scripts/Levels/TestLevel/TesteLevel.gd" type="Script" id=5]
 [ext_resource path="res://Scripts/Core/Save/SaveGame.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Objects/PushableBox.tscn" type="PackedScene" id=7]
