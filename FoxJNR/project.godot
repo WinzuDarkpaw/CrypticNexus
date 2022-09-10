@@ -12,12 +12,12 @@ _global_script_classes=[ {
 "base": "KinematicBody2D",
 "class": "Player",
 "language": "GDScript",
-"path": "res://Scripts/Player.gd"
+"path": "res://Scripts/Core/Objects/Player.gd"
 }, {
 "base": "KinematicBody2D",
 "class": "PushableBox",
 "language": "GDScript",
-"path": "res://Scripts/PushableBox.gd"
+"path": "res://Scripts/Core/Objects/PushableBox.gd"
 }, {
 "base": "Resource",
 "class": "SaveGame",

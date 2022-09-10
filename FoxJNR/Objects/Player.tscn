@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Core/Objects/Player.gd" type="Script" id=1]
 [ext_resource path="res://Textures/Player/01_player_idle_frame6.png" type="Texture" id=2]
 [ext_resource path="res://Textures/Player/01_player_idle_frame7.png" type="Texture" id=3]
 [ext_resource path="res://Textures/Player/01_player_idle_frame1.png" type="Texture" id=4]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Textures/Player/01_player_cryptic.png" type="Texture" id=7]
 [ext_resource path="res://Textures/Player/01_player_idle_frame4.png" type="Texture" id=8]
 [ext_resource path="res://Textures/Player/01_player_idle_frame2.png" type="Texture" id=9]
+
 
 [sub_resource type="CapsuleShape2D" id=1]
 height = 3.86057
