@@ -13,11 +13,14 @@ func _on_Area2D_body_entered(body):
 	if body is Player:
 		get_tree().reload_current_scene()
 
-
-func _on_Goal_body_entered(body):
-	# ""Szenenwechsel""
-	if body is Player:
-		get_tree().reload_current_scene()
+#
+#func _on_Goal_body_entered(body):
+#	# ""Szenenwechsel""
+#	if body is Player:
+#		get_tree().reload_current_scene()
+#
+#func _on_Rift_body_entered(body):
+#	get_tree().change_scene("res://Levels/TestLevel/Level_t2.tscn")
 
 
 func _on_Button_body_entered(body):
@@ -27,7 +30,4 @@ func _on_Button_body_entered(body):
 		$TileMap2.collision_mask = 1
 		# Sichtbarkeit einschalten.
 		$TileMap2.visible = true
-
-
-func _on_Rift_body_entered(body):
-	get_tree().change_scene("res://Levels/TestLevel/Level_t2.tscn")
+		$Button.on_button_pressed()

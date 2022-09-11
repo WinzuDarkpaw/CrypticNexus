@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TileMap.png-258adeb064dd453e952d0b527da7fd15.stex"
+path="res://.import/z01_button.png-936445e8318a004fffe4495ab430a0ef.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/TileMaps/GreenSpringField/TileMap.png"
-dest_files=[ "res://.import/TileMap.png-258adeb064dd453e952d0b527da7fd15.stex" ]
+source_file="res://Textures/TileMaps/GreenSpringField/z01_button.png"
+dest_files=[ "res://.import/z01_button.png-936445e8318a004fffe4495ab430a0ef.stex" ]
 
 [params]
 

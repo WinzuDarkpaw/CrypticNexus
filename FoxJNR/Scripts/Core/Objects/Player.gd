@@ -13,7 +13,7 @@ const speed = 80
 const push_speed = 40
 
 # Sprungkraft. (Negative Sprungkraft = Hoch)
-const jump_force = -240
+const jump_force = -200
 
 # Aktuelle Geschwindigkeit.
 var velocity = Vector2.ZERO
