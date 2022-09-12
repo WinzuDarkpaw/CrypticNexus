@@ -1,10 +1,6 @@
 # CrypticNexus
  A 2D Puzzle Jump and Run with Parallel Universes</br>
 
-# Todo
-## Weiteres</br>
-Eigene Texturen, Spielermodel, Animationen, Dekoelemente</br>
-
 ## Ideen</br>
 - Overworld, inklusive Levelfreischaltungssystem (ü. Datei) als Level</br>
 - Fallende Objekte</br>
