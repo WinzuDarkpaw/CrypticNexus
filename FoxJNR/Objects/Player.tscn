@@ -10,9 +10,9 @@
 [ext_resource path="res://Textures/Player/01_player_idle_frame4.png" type="Texture" id=8]
 [ext_resource path="res://Textures/Player/01_player_idle_frame2.png" type="Texture" id=9]
 
-
 [sub_resource type="CapsuleShape2D" id=1]
-height = 3.86057
+radius = 10.0101
+height = 3.91423
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {

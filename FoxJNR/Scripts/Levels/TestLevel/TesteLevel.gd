@@ -8,6 +8,8 @@ onready var game_saver : Node = null
 
 func _ready():
 	game_saver = $SaveGame
+	$Button.set_textures("res://Textures/TileMaps/GreenSpringField/z01_buttonPushed.png", "res://Textures/TileMaps/GreenSpringField/z01_button.png")
+	$Button.on_load()
 
 func _on_Area2D_body_entered(body):
 	if body is Player:
