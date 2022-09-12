@@ -24,8 +24,9 @@ Eigene Texturen, Spielermodel, Animationen, Dekoelemente</br>
 - Overworld, inklusive Levelfreischaltungssystem (ü. Datei) als Level</br>
 - Fallende Objekte</br>
 - Buttons, die nur mit Kisten aktiviert werden</br>
+- - Weitere Rätselelemente... Inspiration, Szenenübergreifende Knöpfe (ü. Datei)</br>
 - Bewegende Plattformen</br>
-- Checkpoints</br>
+- Checkpoints, nötig? oder nur aktuelle Szene zurücksetzen bei Tod.</br>
 - Übergänge</br>
 - Museum für gefundene Easter Eggs und Gegenstände (ü. Datei)</br>
 - - Collectathon</br>
