@@ -29,3 +29,4 @@ Eigene Texturen, Spielermodel, Animationen, Dekoelemente</br>
 - Übergänge</br>
 - Museum für gefundene Easter Eggs und Gegenstände (ü. Datei)</br>
 - Dialoge / Dialogfelder (Schilder und Charaktere)</br>
+- Startmenü als Level, du musst sterben um das Spiel zu beenden</br>
