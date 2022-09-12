@@ -1,0 +1,27 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Textures/TileMaps/GreenSpringField/z02_zonePortal_right_frame2.png" type="Texture" id=1]
+[ext_resource path="res://Textures/TileMaps/GreenSpringField/z02_zonePortal_right_frame1.png" type="Texture" id=2]
+[ext_resource path="res://Textures/TileMaps/GreenSpringField/z02_zonePortal_right_frame3.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/Core/Objects/Portal.gd" type="Script" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 7.99669, 24 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "Portal",
+"speed": 6.0
+} ]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "Portal"

@@ -4,26 +4,19 @@ extends Node2D
 # In dem Game Skript wird die gesamte Logik, die nur das Level betrifft behandelt.
 # Zwecks, dass Knöpfe nicht immer das gleiche machen! usw.
 
-onready var game_saver : Node = null
-
 func _ready():
-	game_saver = $SaveGame
 	$Button.set_textures("res://Textures/TileMaps/GreenSpringField/z01_buttonPushed.png", "res://Textures/TileMaps/GreenSpringField/z01_button.png")
 	$Button.on_load()
+	$PortalLeft.play_flipped_anim()
+	$PortalRight.play_anim()
+	$Water.play_anim()
+
+func _process(delta):
+	print(Engine.get_frames_per_second())
 
 func _on_Area2D_body_entered(body):
 	if body is Player:
 		get_tree().reload_current_scene()
-
-#
-#func _on_Goal_body_entered(body):
-#	# ""Szenenwechsel""
-#	if body is Player:
-#		get_tree().reload_current_scene()
-#
-#func _on_Rift_body_entered(body):
-#	get_tree().change_scene("res://Levels/TestLevel/Level_t2.tscn")
-
 
 func _on_Button_body_entered(body):
 	if body is Player:

@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Textures/TileMaps/GreenSpringField/z03_zonePortal_left_frame1.png" type="Texture" id=1]
+[ext_resource path="res://Textures/TileMaps/GreenSpringField/z03_zonePortal_left_frame2.png" type="Texture" id=2]
+[ext_resource path="res://Textures/TileMaps/GreenSpringField/z03_zonePortal_left_frame3.png" type="Texture" id=3]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "Portal",
+"speed": 5.0
+} ]
+
+[node name="PortalLeft" type="AnimatedSprite"]
+position = Vector2( 423.99, -72 )
+frames = SubResource( 2 )
+animation = "Portal"

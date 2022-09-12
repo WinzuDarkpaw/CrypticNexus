@@ -1,0 +1,70 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Textures/TileMaps/GreenSpringField/z05_water_down_frame1.png" type="Texture" id=1]
+[ext_resource path="res://Textures/TileMaps/GreenSpringField/z04_water_up_frame2.png" type="Texture" id=2]
+[ext_resource path="res://Textures/TileMaps/GreenSpringField/z05_water_down_frame2.png" type="Texture" id=3]
+[ext_resource path="res://Textures/TileMaps/GreenSpringField/z04_water_up_frame1.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/Core/Objects/Water.gd" type="Script" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "Water",
+"speed": 2.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "Water",
+"speed": 2.0
+} ]
+
+[node name="Water" type="Area2D"]
+script = ExtResource( 5 )
+
+[node name="Surface" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Water"
+
+[node name="Surface2" type="AnimatedSprite" parent="."]
+position = Vector2( 16, 0 )
+frames = SubResource( 1 )
+animation = "Water"
+
+[node name="Surface3" type="AnimatedSprite" parent="."]
+position = Vector2( 32, 0 )
+frames = SubResource( 1 )
+animation = "Water"
+
+[node name="Inner" type="AnimatedSprite" parent="."]
+position = Vector2( 0, 16 )
+frames = SubResource( 2 )
+animation = "Water"
+
+[node name="Inner2" type="AnimatedSprite" parent="."]
+position = Vector2( 0, 32 )
+frames = SubResource( 2 )
+animation = "Water"
+
+[node name="Inner3" type="AnimatedSprite" parent="."]
+position = Vector2( 16, 16 )
+frames = SubResource( 2 )
+animation = "Water"
+
+[node name="Inner4" type="AnimatedSprite" parent="."]
+position = Vector2( 16, 32 )
+frames = SubResource( 2 )
+animation = "Water"
+
+[node name="Inner5" type="AnimatedSprite" parent="."]
+position = Vector2( 32, 16 )
+frames = SubResource( 2 )
+animation = "Water"
+
+[node name="Inner6" type="AnimatedSprite" parent="."]
+position = Vector2( 32, 32 )
+frames = SubResource( 2 )
+animation = "Water"

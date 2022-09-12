@@ -1,6 +1,5 @@
 extends Area2D
 
-#var pressedTexture = preload("res://Textures/TileMaps/GreenSpringField/z01_buttonPushed.png")
 var pressedTexture
 var unpressedTexture
 
