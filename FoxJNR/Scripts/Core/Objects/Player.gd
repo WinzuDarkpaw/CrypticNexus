@@ -18,9 +18,6 @@ const jump_force = -200
 # Aktuelle Geschwindigkeit.
 var velocity = Vector2.ZERO
 
-onready var SAVE_XPOS : String = "xpos"
-onready var SAVE_YPOS : String = "ypos"
-
 func _physics_process(delta):
 	#print(Engine.get_frames_per_second())
 	handle_controls(Input)
@@ -72,14 +69,6 @@ func handle_collisions() -> void:
 
 # Überprüft ob eine Kollision mit einer PushableBox gegeben ist.
 func check_box_collision(motion: Vector2) -> void:
-	var box = get_slide_collision(0).collider as PushableBox
+	var box = get_slide_collision(0).collider as RiddleBox
 	if box:
 		box.push(motion)
-
-func save(save_game: Resource):
-	save_game.data[SAVE_XPOS] = position.x
-	save_game.data[SAVE_YPOS] = position.y
-
-func load(save_game: Resource):
-	position.x = save_game.data[SAVE_XPOS]
-	position.y = save_game.data[SAVE_YPOS]

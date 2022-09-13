@@ -1,12 +1,17 @@
-class_name PushableBox
+class_name RiddleBox
 extends KinematicBody2D
 
 # Behandelt das Verhalten von beweglichen Boxen.
+var boxTexture
 
 # Fallgeschwindigkeit.
 var gravity = 4
 # Aktuelle Geschwindigkeit der Box.
 var boxVelocity = Vector2.ZERO
+
+func set_texture(texture):
+	boxTexture = load(texture)
+	$Sprite.texture = boxTexture
 
 func _physics_process(delta):
 	# Die Geschwindigkeit wird nicht steigen, wenn sich die Box auf dem Boden

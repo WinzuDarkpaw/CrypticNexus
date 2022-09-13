@@ -15,25 +15,13 @@ _global_script_classes=[ {
 "path": "res://Scripts/Core/Objects/Player.gd"
 }, {
 "base": "KinematicBody2D",
-"class": "PushableBox",
+"class": "RiddleBox",
 "language": "GDScript",
-"path": "res://Scripts/Core/Objects/PushableBox.gd"
-}, {
-"base": "Resource",
-"class": "SaveGame",
-"language": "GDScript",
-"path": "res://Scripts/Core/Save/SaveGame.gd"
-}, {
-"base": "Node",
-"class": "Saving",
-"language": "GDScript",
-"path": "res://Scripts/Core/Save/Saving.gd"
+"path": "res://Scripts/Core/Objects/RiddleBox.gd"
 } ]
 _global_script_class_icons={
 "Player": "",
-"PushableBox": "",
-"SaveGame": "",
-"Saving": ""
+"RiddleBox": ""
 }
 
 [application]

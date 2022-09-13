@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Resources/GreenSpringField_TM.tres" type="TileSet" id=1]
 [ext_resource path="res://Objects/Water.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Objects/BoxButton.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scripts/Levels/TestLevel/TesteLevel.gd" type="Script" id=5]
 [ext_resource path="res://Objects/PushableBox.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Objects/Button.tscn" type="PackedScene" id=8]
@@ -54,5 +55,10 @@ position = Vector2( 424.015, -71.9987 )
 
 [node name="Water" parent="." instance=ExtResource( 2 )]
 position = Vector2( 168.008, 33.8521 )
+
+[node name="BoxButton" parent="." instance=ExtResource( 3 )]
+position = Vector2( 333.014, -7.99667 )
 [connection signal="body_entered" from="DeathZone" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Button" to="." method="_on_Button_body_entered"]
+[connection signal="body_entered" from="BoxButton" to="." method="_on_BoxButton_body_entered"]
+[connection signal="body_exited" from="BoxButton" to="." method="_on_BoxButton_body_exited"]
