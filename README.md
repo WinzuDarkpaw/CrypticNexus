@@ -4,8 +4,8 @@
 ## Ideen</br>
 - Overworld, inklusive Levelfreischaltungssystem (ü. Datei) als Level</br>
 - Fallende Objekte</br>
-- Buttons, die nur mit Kisten aktiviert werden</br>
-- - Buttons, die nur von bestimmten (Seiten der) Kisten aktiviert werden</br>
+- Buttons, die nur mit Kisten aktiviert werden [FERTIG]</br>
+- - Buttons, die nur von bestimmten (Seiten der) Kisten aktiviert werden [FERTIG]</br>
 - - Weitere Rätselelemente... Inspiration, Szenenübergreifende Knöpfe (ü. Datei)</br>
 - Bewegende Plattformen</br>
 - Checkpoints, nötig? oder nur aktuelle Szene zurücksetzen bei Tod.</br>
@@ -17,3 +17,10 @@
 - Achievements</br>
 - Storytelling</br>
 - Musik und Sounds</br>
+
+- "4 Gewinnt"-Rätsel
+- - Aus Boxen oder anderen Gegenständen ein Muster "zeichnen", nur dann kommt man weiter
+- - In der Welt Hinweise finden, diese auf ein "Canvas" umsetzen
+
+- Hebelrätsel
+- - Hebel in einer bestimmten Reihenfolge aktivieren
