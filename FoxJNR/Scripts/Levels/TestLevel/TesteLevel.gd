@@ -34,9 +34,11 @@ func _on_BoxButton_body_entered(body):
 	if body == $PushableBox:
 		# weitere Logik
 		$BoxButton.on_button_pressed()
+		$PushableBox.set_texture("res://Textures/TileMaps/GreenSpringField/z01_pushableBox1_lit.png")
 
 
 func _on_BoxButton_body_exited(body):
 	if body == $PushableBox:
 		$BoxButton.on_button_unpress()
+		$PushableBox.set_texture("res://Textures/TileMaps/GreenSpringField/z01_pushableBox1.png")
 		# weitere Logik
