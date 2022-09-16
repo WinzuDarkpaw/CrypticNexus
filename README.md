@@ -3,6 +3,8 @@
 
 ## Ideen</br>
 - Overworld, inklusive Levelfreischaltungssystem (ü. Datei) als Level</br>
+- Kisten soll man Aufheben können, damit man feststeckende Kisten verhindern kann</br>
+- Kisten sollen, wenn diese in der DeathZone sind zurückgesetzt werden</br>
 - Fallende Objekte</br>
 - Buttons, die nur mit Kisten aktiviert werden [FERTIG]</br>
 - - Buttons, die nur von bestimmten (Seiten der) Kisten aktiviert werden [FERTIG]</br>
