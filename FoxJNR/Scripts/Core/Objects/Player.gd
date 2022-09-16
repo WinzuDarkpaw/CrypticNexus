@@ -43,12 +43,6 @@ func handle_controls(input: Input) -> void:
 	
 	if Input.is_action_just_pressed("Jump") and is_on_floor():
 		velocity.y = jump_force
-	
-	if Input.is_action_pressed("SaveGame"):
-		get_parent().game_saver.save_game(1)
-	
-	if Input.is_action_pressed("LoadGame"):
-		get_parent().game_saver.load_game(1)
 
 # Behandelt die Physischen Kräfte des Spielercharakters.
 # Wie z.B. Gravitation.
@@ -71,4 +65,9 @@ func handle_collisions() -> void:
 func check_box_collision(motion: Vector2) -> void:
 	var box = get_slide_collision(0).collider as RiddleBox
 	if box:
-		box.push(motion)
+		# Kiste hochheben.
+		if Input.is_action_pressed("Interact"):
+			motion.y -= 320
+			box.push(motion)
+		else:
+			box.push(motion)

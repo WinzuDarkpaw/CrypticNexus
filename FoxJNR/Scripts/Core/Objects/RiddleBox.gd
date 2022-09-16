@@ -27,3 +27,6 @@ func _physics_process(delta):
 # Bewegt die Box, entsprechend des Parameters velocity, auf der X-Achse.
 func push(velocity: Vector2) -> void:
 	move_and_slide(velocity, Vector2())
+
+#func drag(velocity: Vector2) -> void:
+#	move_and_slide(velocity, Vector2())
