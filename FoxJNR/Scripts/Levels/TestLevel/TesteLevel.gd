@@ -15,7 +15,8 @@ func _ready():
 	$BoxButton.on_button_unpress()
 
 func _process(delta):
-	print(Engine.get_frames_per_second())
+	pass
+	#print(Engine.get_frames_per_second())
 
 func _on_Area2D_body_entered(body):
 	if body is Player:
@@ -42,3 +43,11 @@ func _on_BoxButton_body_exited(body):
 		$BoxButton.on_button_unpress()
 		$PushableBox.set_texture("res://Textures/TileMaps/GreenSpringField/z01_pushableBox1.png")
 		# weitere Logik
+
+
+func _on_ShieldInfo_body_entered(body):
+	$ShieldInfo.toggle_speechbubble()
+
+
+func _on_ShieldInfo_body_exited(body):
+	$ShieldInfo.toggle_speechbubble()

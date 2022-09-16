@@ -19,7 +19,6 @@ const jump_force = -200
 var velocity = Vector2.ZERO
 
 func _physics_process(delta):
-	#print(Engine.get_frames_per_second())
 	handle_controls(Input)
 	handle_collisions()
 	apply_force()
@@ -65,9 +64,4 @@ func handle_collisions() -> void:
 func check_box_collision(motion: Vector2) -> void:
 	var box = get_slide_collision(0).collider as RiddleBox
 	if box:
-		# Kiste hochheben.
-		if Input.is_action_pressed("Interact"):
-			motion.y -= 320
-			box.push(motion)
-		else:
-			box.push(motion)
+		box.push(motion)

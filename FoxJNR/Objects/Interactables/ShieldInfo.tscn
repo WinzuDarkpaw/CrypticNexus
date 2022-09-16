@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Textures/TileMaps/GreenSpringField/z07_shieldInfo.png" type="Texture" id=1]
+[ext_resource path="res://Textures/TileMaps/GreenSpringField/z08_speechBubbleQuestion.png" type="Texture" id=2]
+[ext_resource path="res://Objects/Interactables/ShieldInfo.gd" type="Script" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 10, 10.5668 )
+
+[node name="ShieldInfo" type="Area2D"]
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 0, -16 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )

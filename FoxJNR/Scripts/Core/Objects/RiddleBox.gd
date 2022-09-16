@@ -3,6 +3,7 @@ extends KinematicBody2D
 
 # Behandelt das Verhalten von beweglichen Boxen.
 var boxTexture
+var isThrowable = false
 
 # Fallgeschwindigkeit.
 var gravity = 4
@@ -18,9 +19,14 @@ func _physics_process(delta):
 	# befindet.
 	if is_on_floor():
 		boxVelocity.y = 0
+	
+	if isThrowable and Input.is_action_just_pressed("Interact"):
+		boxVelocity.y -= 160
 	# Befindet sich die Box nicht auf dem Boden, soll diese fallen.
 	else:
 		boxVelocity.y += gravity
+	
+	
 	
 	move_and_slide(boxVelocity, Vector2.UP)
 
@@ -28,5 +34,10 @@ func _physics_process(delta):
 func push(velocity: Vector2) -> void:
 	move_and_slide(velocity, Vector2())
 
-#func drag(velocity: Vector2) -> void:
-#	move_and_slide(velocity, Vector2())
+
+func _on_InteractableIndicator_body_entered(body):
+	isThrowable = true
+
+
+func _on_InteractableIndicator_body_exited(body):
+	isThrowable = false
