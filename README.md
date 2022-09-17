@@ -3,18 +3,15 @@
 
 ## Ideen</br>
 - Overworld, inklusive Levelfreischaltungssystem (ü. Datei) als Level</br>
-- Kisten soll man Aufheben können, damit man feststeckende Kisten verhindern kann</br>
+- Kisten soll man Aufheben können, damit man feststeckende Kisten verhindern kann[FERTIG]</br>
 - Kisten sollen, wenn diese in der DeathZone sind zurückgesetzt werden</br>
-- Fallende Objekte</br>
 - Buttons, die nur mit Kisten aktiviert werden [FERTIG]</br>
-- - Buttons, die nur von bestimmten (Seiten der) Kisten aktiviert werden [FERTIG]</br>
 - - Weitere Rätselelemente... Inspiration, Szenenübergreifende Knöpfe (ü. Datei)</br>
 - Bewegende Plattformen</br>
-- Checkpoints, nötig? oder nur aktuelle Szene zurücksetzen bei Tod.</br>
 - Übergänge</br>
 - Museum für gefundene Easter Eggs und Gegenstände (ü. Datei)</br>
 - - Collectathon</br>
-- Dialoge / Dialogfelder (Schilder und Charaktere)</br>
+- Dialoge / Dialogfelder (Schilder und Charaktere)[FERTIG]</br>
 - Startmenü als Level, du musst sterben um das Spiel zu beenden</br>
 - Achievements</br>
 - Storytelling</br>

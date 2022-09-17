@@ -1,9 +1,5 @@
 extends Node2D
 
-# EXAMPLE CODE
-# In dem Game Skript wird die gesamte Logik, die nur das Level betrifft behandelt.
-# Zwecks, dass Knöpfe nicht immer das gleiche machen! usw.
-
 func _ready():
 	$Button.set_textures("res://Textures/TileMaps/GreenSpringField/z01_buttonPushed.png", "res://Textures/TileMaps/GreenSpringField/z01_button.png")
 	$Button.on_load()
@@ -13,10 +9,14 @@ func _ready():
 	$PushableBox.set_texture("res://Textures/TileMaps/GreenSpringField/z01_pushableBox1.png")
 	$BoxButton.set_textures("res://Textures/TileMaps/GreenSpringField/z06_boxButton.png", "res://Textures/TileMaps/GreenSpringField/z06_boxButton_lit.png")
 	$BoxButton.on_button_unpress()
+	$ShieldInfo.set_textures("res://Textures/TileMaps/GreenSpringField/z07_shieldInfo.png", "res://Textures/TileMaps/GreenSpringField/z08_speechBubbleQuestion.png")
 
 func _process(delta):
-	pass
-	#print(Engine.get_frames_per_second())
+	# Dialogfelder anzeigen, wenn "F" gedrückt wird.
+	if $ShieldInfo.isInteractable and Input.is_action_pressed("Interact"):
+		$DialogueBox.visible = true
+	else:
+		$DialogueBox.visible = false
 
 func _on_Area2D_body_entered(body):
 	if body is Player:
