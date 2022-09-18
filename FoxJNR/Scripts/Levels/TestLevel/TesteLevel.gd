@@ -7,6 +7,9 @@ func _ready():
 	$PortalRight.play_anim()
 	$Water.play_anim()
 	$PushableBox.set_texture("res://Textures/TileMaps/GreenSpringField/z01_pushableBox1.png")
+	$PushableBox.set_default_position(360.833, -23.031)
+	$PushableBox2.set_texture("res://Textures/TileMaps/GreenSpringField/z01_pushableBox1.png")
+	$PushableBox2.set_default_position(230.628, -65.123)
 	$BoxButton.set_textures("res://Textures/TileMaps/GreenSpringField/z06_boxButton.png", "res://Textures/TileMaps/GreenSpringField/z06_boxButton_lit.png")
 	$BoxButton.on_button_unpress()
 	$ShieldInfo.set_textures("res://Textures/TileMaps/GreenSpringField/z07_shieldInfo.png", "res://Textures/TileMaps/GreenSpringField/z08_speechBubbleQuestion.png")
@@ -21,6 +24,9 @@ func _process(delta):
 func _on_Area2D_body_entered(body):
 	if body is Player:
 		get_tree().reload_current_scene()
+	if body is RiddleBox:
+		body.position.x = body.posX
+		body.position.y = body.posY
 
 func _on_Button_body_entered(body):
 	if body is Player:

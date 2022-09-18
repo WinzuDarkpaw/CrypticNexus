@@ -7,6 +7,8 @@ var obj = load("res://Scripts/Core/Objects/Player.gd")
 # Behandelt das Verhalten von beweglichen Boxen.
 var boxTexture
 var isThrowable = false
+var posX = 0
+var posY = 0
 
 # Fallgeschwindigkeit.
 var gravity = 4
@@ -42,3 +44,7 @@ func _on_InteractableIndicator_body_entered(body):
 func _on_InteractableIndicator_body_exited(body):
 	if body is obj:
 		isThrowable = false
+
+func set_default_position(x, y):
+	posX = x
+	posY = y
