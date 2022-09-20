@@ -1,14 +1,21 @@
+class_name BoxButton
 extends Area2D
+
+#
+#	SAVED VARIABLES
+#
+var isPressed
 
 var pressedTexture
 var unpressedTexture
 
-func on_button_unpress():
+func unpress():
 	$Sprite.texture = unpressedTexture
 
-func on_button_pressed():
+func press():
 	$Sprite.texture = pressedTexture
 
-func set_textures(unpressed, pressed):
+func initialize(unpressed, pressed):
 	pressedTexture = load(pressed)
 	unpressedTexture = load(unpressed)
+	unpress()

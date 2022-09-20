@@ -9,19 +9,43 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Area2D",
+"class": "BoxButton",
+"language": "GDScript",
+"path": "res://Scripts/Core/Objects/BoxButton.gd"
+}, {
+"base": "Area2D",
+"class": "OneTimeButton",
+"language": "GDScript",
+"path": "res://Scripts/Core/Objects/Button.gd"
+}, {
 "base": "KinematicBody2D",
 "class": "Player",
 "language": "GDScript",
 "path": "res://Scripts/Core/Objects/Player.gd"
 }, {
+"base": "Area2D",
+"class": "Portal",
+"language": "GDScript",
+"path": "res://Scripts/Core/Objects/Portal.gd"
+}, {
 "base": "KinematicBody2D",
 "class": "RiddleBox",
 "language": "GDScript",
 "path": "res://Scripts/Core/Objects/RiddleBox.gd"
+}, {
+"base": "Area2D",
+"class": "Water",
+"language": "GDScript",
+"path": "res://Scripts/Core/Objects/Water.gd"
 } ]
 _global_script_class_icons={
+"BoxButton": "",
+"OneTimeButton": "",
 "Player": "",
-"RiddleBox": ""
+"Portal": "",
+"RiddleBox": "",
+"Water": ""
 }
 
 [application]

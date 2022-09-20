@@ -1,6 +1,7 @@
+class_name Water
 extends Area2D
 
-func play_anim():
+func initialize():
 	$Surface.play("Water")
 	$Inner.play("Water")
 	$Inner2.play("Water")

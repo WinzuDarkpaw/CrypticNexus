@@ -13,7 +13,7 @@ func toggle_speechbubble() -> void:
 		$Sprite2.visible = true
 		isInteractable = true
 
-func set_textures(shield, speechbubble) -> void:
+func initialize(shield, speechbubble) -> void:
 	shieldTexture = load(shield)
 	speechbubbleTexture = load(speechbubble)
 	$Sprite.texture = shieldTexture

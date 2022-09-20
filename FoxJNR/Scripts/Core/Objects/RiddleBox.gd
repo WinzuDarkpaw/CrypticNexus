@@ -1,26 +1,32 @@
 class_name RiddleBox
 extends KinematicBody2D
 
+#
+#	SAVED VARIABLES
+#
+var posX
+var posY
+
 # Laden eines Spielerobjekts.
 var obj = load("res://Scripts/Core/Objects/Player.gd")
 
-# Behandelt das Verhalten von beweglichen Boxen.
 var boxTexture
 var isThrowable = false
-var posX = 0
-var posY = 0
+var stdPosX = 0
+var stdPosY = 0
 
 # Fallgeschwindigkeit.
 var gravity = 4
 # Aktuelle Geschwindigkeit der Box.
 var boxVelocity = Vector2.ZERO
 
-func set_texture(texture):
+func initialize(texture, x, y):
 	boxTexture = load(texture)
 	$Sprite.texture = boxTexture
+	stdPosX = x
+	stdPosY = y
 
 func _physics_process(delta):
-	print(isThrowable)
 	# Die Geschwindigkeit wird nicht steigen, wenn sich die Box auf dem Boden
 	# befindet.
 	if is_on_floor():
@@ -37,6 +43,10 @@ func _physics_process(delta):
 func push(velocity: Vector2) -> void:
 	move_and_slide(velocity, Vector2())
 
+func set_texture(texture):
+	boxTexture = load(texture)
+	$Sprite.texture = boxTexture
+
 func _on_InteractableIndicator_body_entered(body):
 	if body is obj:
 		isThrowable = true
@@ -45,6 +55,4 @@ func _on_InteractableIndicator_body_exited(body):
 	if body is obj:
 		isThrowable = false
 
-func set_default_position(x, y):
-	posX = x
-	posY = y
+

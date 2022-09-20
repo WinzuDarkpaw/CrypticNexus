@@ -1,8 +1,9 @@
+class_name Portal
 extends Area2D
 
-func play_anim():
+func play():
 	$AnimatedSprite.play("Portal")
 
-func play_flipped_anim():
+func play_flipped():
 	$AnimatedSprite.flip_h = true
 	$AnimatedSprite.play("Portal")

@@ -1,14 +1,21 @@
+class_name OneTimeButton
 extends Area2D
+
+#
+#	SAVED VARIABLES
+#
+var isPressed
 
 var pressedTexture
 var unpressedTexture
 
-func on_load():
-	$Sprite.texture = unpressedTexture
-
-func on_button_pressed():
-	$Sprite.texture = pressedTexture
-
-func set_textures(pressed, unpressed):
+func initialize(pressed, unpressed):
 	pressedTexture = load(pressed)
 	unpressedTexture = load(unpressed)
+	start()
+
+func start():
+	$Sprite.texture = unpressedTexture
+
+func on_press():
+	$Sprite.texture = pressedTexture
