@@ -30,3 +30,5 @@
 - - Variablen in eine Datei speichern und auslesen</br>
 - - Einfach Plain-Text, kein JSON-Format</br>
 - - Eine Datei für jedes Objekt</br>
+- - Speichern beim Verlassen der Szene</br>
+- - Laden beim Betreten der Szene</br>
