@@ -22,4 +22,11 @@
 - Übergänge bei Szenenwechsel</br>
 - Cutscenes</br>
 - Museum f. gesammeltes</br>
-- Musik/Sounds</br>
+- Musik/Sounds</br></br>
+
+## TO-DOs</br>
+- Refactoring</br>
+- Speichersystem entwickeln</br>
+- - Variablen in eine Datei speichern und auslesen</br>
+- - Einfach Plain-Text, kein JSON-Format</br>
+- - Eine Datei für jedes Objekt</br>
