@@ -10,9 +10,11 @@ var pressedTexture
 var unpressedTexture
 
 func unpress():
+	isPressed = 0
 	$Sprite.texture = unpressedTexture
 
 func press():
+	isPressed = 1
 	$Sprite.texture = pressedTexture
 
 func initialize(unpressed, pressed):

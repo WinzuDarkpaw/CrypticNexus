@@ -18,3 +18,5 @@ func initialize(shield, speechbubble) -> void:
 	speechbubbleTexture = load(speechbubble)
 	$Sprite.texture = shieldTexture
 	$Sprite2.texture = speechbubbleTexture
+	
+	$Sprite2.visible = false

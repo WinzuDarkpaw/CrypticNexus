@@ -1,12 +1,6 @@
 class_name RiddleBox
 extends KinematicBody2D
 
-#
-#	SAVED VARIABLES
-#
-var posX
-var posY
-
 # Laden eines Spielerobjekts.
 var obj = load("res://Scripts/Core/Objects/Player.gd")
 
