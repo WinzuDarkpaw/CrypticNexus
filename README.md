@@ -25,10 +25,5 @@
 - Musik/Sounds</br></br>
 
 ## TO-DOs</br>
-- Refactoring</br>
-- Speichersystem entwickeln</br>
-- - Variablen in eine Datei speichern und auslesen</br>
-- - Einfach Plain-Text, kein JSON-Format</br>
-- - Eine Datei für jedes Objekt</br>
-- - Speichern beim Verlassen der Szene</br>
-- - Laden beim Betreten der Szene</br>
+- Szenen wechseln</br>
+- Dynamisches setzen der Spielerposition</br>
