@@ -8,6 +8,7 @@ const jump_force = -200
 var velocity = Vector2.ZERO
 
 func _physics_process(delta):
+	print(Engine.get_frames_per_second())
 	handle_controls(Input)
 	handle_collisions()
 	apply_force()
