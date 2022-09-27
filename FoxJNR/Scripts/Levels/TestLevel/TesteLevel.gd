@@ -117,3 +117,8 @@ func reset_save_file(file):
 		var dir = Directory.new()
 		dir.remove(file)
 	save_file.close()
+
+
+func _on_PortalLeft_body_entered(body):
+	if body is Player:
+		get_tree().change_scene("res://Levels/TestLevel/Level_t1_scn2.tscn")
