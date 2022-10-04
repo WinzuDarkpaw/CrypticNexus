@@ -31,11 +31,27 @@ func _ready():
 	$PortalLeft.play_flipped()
 	$PortalRight.play()
 	load_level(saveFile)
+	
+	var playerPos = PlayerPosition.new()
+	#playerPos.reset()
+	var playerPositionValues = playerPos.load_player_position()
+	var pX = playerPositionValues.x
+	var pY = playerPositionValues.y
+
+	if pX != null and pY != null:
+		$Player.position.x = pX
+		$Player.position.y = pY
+	
 
 func _exit_tree():
 	save_level(saveFile)
 
 func _process(delta):
+	var format_string = "x: {x}, y: {y}"
+	var actual = format_string.format({"x": $Player.position.x, "y": $Player.position.y})
+	
+	print(actual)
+	
 	if $ShieldInfo.isInteractable and Input.is_action_pressed("Interact"):
 		$DialogueBox.visible = true
 	else:
@@ -45,6 +61,8 @@ func _process(delta):
 
 func _on_Area2D_body_entered(body):
 	if body is Player:
+		var playerPos = PlayerPosition.new()
+		playerPos.reset()
 		get_tree().reload_current_scene()
 	if body is RiddleBox:
 		body.position.x = body.stdPosX
@@ -120,5 +138,8 @@ func reset_save_file(file):
 
 
 func _on_PortalLeft_body_entered(body):
+	var playerPos = PlayerPosition.new()
+	playerPos.set_player_position(68.83, 116)
+	
 	if body is Player:
 		get_tree().change_scene("res://Levels/TestLevel/Level_t1_scn2.tscn")
