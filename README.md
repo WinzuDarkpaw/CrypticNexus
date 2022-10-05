@@ -27,3 +27,4 @@
 ## TO-DOs</br>
 - Szenen wechseln</br>
 - Dynamisches setzen der Spielerposition</br>
+- - Über Datei gelöst, sollte man die Daten nach dem Auslesen löschen?</br>
