@@ -1,8 +1,10 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Textures/TileMaps/GreenSpringField/z07_shieldInfo.png" type="Texture" id=1]
-[ext_resource path="res://Textures/TileMaps/GreenSpringField/z08_speechBubbleQuestion.png" type="Texture" id=2]
-[ext_resource path="res://Objects/Interactables/ShieldInfo.gd" type="Script" id=3]
+[ext_resource path="res://Graphics/TileMaps/GreenSpringField/z07_shieldInfo.png" type="Texture" id=1]
+[ext_resource path="res://Graphics/TileMaps/GreenSpringField/z08_speechBubbleQuestion.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/Core/Objects/ShieldInfo.gd" type="Script" id=3]
+
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10, 10.5668 )
