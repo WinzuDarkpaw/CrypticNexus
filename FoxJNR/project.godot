@@ -39,6 +39,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Scripts/Core/Objects/RiddleBox.gd"
 }, {
+"base": "Reference",
+"class": "Scene_TitleScreen",
+"language": "GDScript",
+"path": "res://Scripts/TitleScreen/TitleScreen.gd"
+}, {
 "base": "Area2D",
 "class": "Water",
 "language": "GDScript",
@@ -51,13 +56,14 @@ _global_script_class_icons={
 "PlayerPosition": "",
 "Portal": "",
 "RiddleBox": "",
+"Scene_TitleScreen": "",
 "Water": ""
 }
 
 [application]
 
 config/name="Fox Jnr"
-run/main_scene="res://Levels/MainScreen/MainScreen.tscn"
+run/main_scene="res://Levels/TitleScreen/TitleScreen.tscn"
 config/icon="res://icon.png"
 
 [display]

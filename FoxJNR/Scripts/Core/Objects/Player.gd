@@ -2,9 +2,9 @@ class_name Player
 extends KinematicBody2D
 
 const gravity = 9.8
-const speed = 80
-const push_speed = 40
-const jump_force = -200
+const speed = 160
+const push_speed = 80
+const jump_force = -400
 var velocity = Vector2.ZERO
 
 func _physics_process(delta):
