@@ -22,7 +22,8 @@
 - Museum f. gesammeltes</br>
 - Musik/Sounds</br></br>
 
-## TO-DOs</br>
-Auf Artstyle festlegen</br>
+## TO-DOs für dieses Wochenende</br>
+Auf Artstyle festlegen => Simpel, Flat</br>
 TileMap "Autumn" erstellen</br>
 Platzhalter Logo "Name Here" erstellen</br>
+TitleScreen erstellen</br>
