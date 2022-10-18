@@ -10,13 +10,11 @@
 - - Hebel in einer bestimmten Reihenfolge aktivieren
 
 ## Mechanics</br>
-- Speichersystem f. Collectables, abgeschl. Level usw.</br>
 - Szenenübergreifend funktionierende Knöpfe</br>
 - Bewegende Plattformen</br>
 - Achievements</br></br>
 
 ## Gameplay</br>
-- Upscale der Texturen von 16x16 zu 32x32</br>
 - Startmenü</br>
 - Overworld</br>
 - Übergänge bei Szenenwechsel</br>
@@ -25,6 +23,6 @@
 - Musik/Sounds</br></br>
 
 ## TO-DOs</br>
-- Szenen wechseln</br>
-- Dynamisches setzen der Spielerposition</br>
-- - Über Datei gelöst, sollte man die Daten nach dem Auslesen löschen?</br>
+Auf Artstyle festlegen</br>
+TileMap "Autumn" erstellen</br>
+Platzhalter Logo "Name Here" erstellen</br>
