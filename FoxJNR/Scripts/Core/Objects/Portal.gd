@@ -1,9 +1,15 @@
-class_name Portal
 extends Area2D
 
-func play():
-	$AnimatedSprite.play("Portal")
+var IsInteractable = false
 
-func play_flipped():
-	$AnimatedSprite.flip_h = true
-	$AnimatedSprite.play("Portal")
+var _texture
+
+func set_texture(path):
+	_texture = load(path)
+	$Sprite.texture = _texture
+
+func toggle_interactability():
+	if IsInteractable:
+		IsInteractable = false
+	else:
+		IsInteractable = true
