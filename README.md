@@ -23,7 +23,5 @@
 - Musik/Sounds</br></br>
 
 ## TO-DOs für dieses Wochenende</br>
-Auf Artstyle festlegen => Simpel, Flat</br>
-TileMap "Autumn" erstellen</br>
 Platzhalter Logo "Name Here" erstellen</br>
-TitleScreen erstellen</br>
+Levelauswahl</br>
