@@ -31,10 +31,10 @@ shape = SubResource( 1 )
 position = Vector2( 814.317, 480.062 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = 163.167
-margin_top = 497.043
-margin_right = 250.167
-margin_bottom = 537.043
+margin_left = 163.0
+margin_top = 497.0
+margin_right = 250.0
+margin_bottom = 544.0
 text = "QUIT GAME
 |
 V"
