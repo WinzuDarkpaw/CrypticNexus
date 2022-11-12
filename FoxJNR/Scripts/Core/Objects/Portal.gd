@@ -1,3 +1,4 @@
+class_name TitleScreenPortal
 extends Area2D
 
 var IsInteractable = false
