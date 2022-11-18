@@ -23,5 +23,5 @@
 - Musik/Sounds</br></br>
 
 ## TO-DOs für dieses Wochenende</br>
-Platzhalter Logo "Name Here" erstellen</br>
-Levelauswahl</br>
+Ein Testlevel (Spielbares)</br>
+Early Access lol, Stefan will zocken?!</br>
