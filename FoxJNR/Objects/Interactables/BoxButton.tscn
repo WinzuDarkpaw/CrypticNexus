@@ -3,7 +3,7 @@
 [ext_resource path="res://Scripts/Core/Objects/BoxButton.gd" type="Script" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 8.01626, 7.98166 )
+extents = Vector2( 16.0078, 7.98166 )
 
 [node name="BoxButton" type="Area2D"]
 script = ExtResource( 1 )

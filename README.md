@@ -23,5 +23,5 @@
 - Musik/Sounds</br></br>
 
 ## TO-DOs für dieses Wochenende</br>
-Ein Testlevel (Spielbares)</br>
-Early Access lol, Stefan will zocken?!</br>
+Dokumentation (Ich kann mir nicht alles merken)</br>
+* Levelaufbau</br>

@@ -38,7 +38,7 @@ func handle_collisions() -> void:
 	if slide_count > 0:
 		for i in slide_count:
 			var collision = get_slide_collision(i)
-			if collision.collider.name == "TileMap":
+			if collision.collider.name == "MainTileMap":
 				check_box_collision(velocity)
 
 func check_box_collision(motion: Vector2) -> void:

@@ -22,6 +22,7 @@ Zu speichernde Daten unter: user://saves/{level_id}/{scene}_objects.save</br>
 * Status, z.B. "gedrückt" bei Knöpfen.</br>
 ** SCOPE: Level</br>
 *** FORMAT: {object_id}.{Variablename}:{value}</br>
+*** Info: Paralleluniversum der Szene teilt sich die selbe Datei.</br>
 
 ## Dynamische Position für Spieler</br>
 Zu speichernde Daten unter: user://saves/player.save
@@ -33,3 +34,5 @@ Zu speichernde Daten unter: user://saves/player.save
 *** FORMAT:</br>
 *** {xValue}
 *** {yValue}
+</br>
+user:// ist unter %appdata%/roaming/godot/app_userdata/fox jnr/
