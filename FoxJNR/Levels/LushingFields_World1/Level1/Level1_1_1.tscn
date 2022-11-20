@@ -46,3 +46,5 @@ position = Vector2( 650.776, 344.022 )
 [connection signal="body_entered" from="DeathZone" to="." method="_on_DeathZone_body_entered"]
 [connection signal="body_entered" from="Portal" to="." method="_on_Portal_body_entered"]
 [connection signal="body_exited" from="Portal" to="." method="_on_Portal_body_exited"]
+[connection signal="body_entered" from="BoxButton" to="." method="_on_BoxButton_body_entered"]
+[connection signal="body_exited" from="BoxButton" to="." method="_on_BoxButton_body_exited"]

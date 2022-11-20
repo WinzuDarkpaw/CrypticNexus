@@ -19,6 +19,10 @@ func _ready():
 	$BoxButton.initialize(boxButtonTexture, boxButtonPushedTexture)
 	$PushableBox.initialize(boxTexture, $PushableBox.position.x, $PushableBox.position.y)
 	
+	$Border.collision_layer = 1
+	$Border.collision_mask = 1
+	$Border.visible = true
+	
 	load_scene()
 
 # ==============================================================================
@@ -93,3 +97,19 @@ func setup_directory():
 	dir.open("user://saves")
 	if not dir.dir_exists("user://saves/level1_1"):
 		dir.make_dir("level1_1")
+
+
+func _on_BoxButton_body_entered(body):
+	if body == $PushableBox:
+		$BoxButton.press()
+		$Border.collision_layer = 0
+		$Border.collision_mask = 0
+		$Border.visible = false
+
+
+func _on_BoxButton_body_exited(body):
+	if body == $PushableBox:
+		$BoxButton.unpress()
+		$Border.collision_layer = 1
+		$Border.collision_mask = 1
+		$Border.visible = true
