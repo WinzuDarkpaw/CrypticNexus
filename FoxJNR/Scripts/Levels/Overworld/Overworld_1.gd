@@ -15,6 +15,7 @@ const _startGamePortalTexture = "res://Graphics/Tiles/Interactables/Titlescreen 
 func _ready():
 	$PortalBack.set_texture(_startGamePortalTexture)
 	$PortalNextSubarea.set_texture(_startGamePortalTexture)
+	$PortalLevel1.set_texture(_startGamePortalTexture)
 
 # ==============================================================================
 # == Überprüft konstant, ob mit gewissen Objekten interargiert                ==
@@ -25,6 +26,8 @@ func _physics_process(delta):
 		get_tree().change_scene("res://Levels/TitleScreen/TitleScreen.tscn")
 	if $PortalNextSubarea.IsInteractable and Input.is_action_just_pressed("Interact"):
 		get_tree().change_scene("res://Levels/Overworld/Overworld_1_2.tscn")
+	if $PortalLevel1.IsInteractable and Input.is_action_just_pressed("Interact"):
+		get_tree().change_scene("res://Levels/LushingFields_World1/Level1/Level1_1_1.tscn")
 
 
 # ==============================================================================
@@ -56,3 +59,13 @@ func _on_portalNextSubarea_body_entered(body):
 func _on_portalNextSubarea_body_exited(body):
 	if body is Player:
 		$PortalNextSubarea.toggle_interactability()
+
+
+func _on_PortalLevel1_body_entered(body):
+	if body is Player:
+		$PortalLevel1.toggle_interactability()
+
+
+func _on_PortalLevel1_body_exited(body):
+	if body is Player:
+		$PortalLevel1.toggle_interactability()
